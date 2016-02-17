@@ -1,0 +1,495 @@
+/* 1vw = 0.3em */
+
+/**************************************************************TABLET****************************************************************************/
+/***************************************** GLOBAL *****************************************/
+@media screen and (max-width: 64em) {
+     .scroll.affix-top{
+         top:10%;
+        font-size:2em;
+    }
+    .scroll.affix{
+        font-size:1em;
+    }
+.students-right{
+	right: 0em;
+	top: -2em;
+}
+.students-left{
+	left: 0em;
+	top: -2em;
+}
+	    section.main-banner {
+min-height: 20em;
+}
+section.main-banner .inner {
+    height: 20em;
+    position: relative;
+}
+.content-wrapper section .inner .content {
+	width: 80% !important;
+}
+.content-wrapper .content h1 {
+	font-size: 2.5em;
+}
+.content-wrapper .content a.arrow {
+	font-size: 1.5em;
+	height: 1.7em;
+	width: 12.6em;
+	line-height: 1.7em;
+	padding: 0;
+	transition: ease-in 1s;
+	margin: 0 auto;
+}
+.content-wrapper .content a.arrow:hover {
+	background-position: 0 100%;
+	color: #444444;
+	transition: ease-in 1s;
+}
+  .numbers .content h3{
+        font-size:3.2em;
+     }
+.visit .content h1{
+    font-size:2.25em;
+}
+.majors .content .container{
+width:23em;
+float:right;
+clear:both;
+}
+.RQI a {
+    position: fixed;
+    top: 15em;
+    left: -7em;
+    padding: .5em;
+    font-size: 1em;
+    }
+    a.btn{
+font-size:1em;
+
+}
+.costs .content h1 img{display: none!important;}
+/*****************Begin Banner*******************/
+section.main-banner {
+	margin-top: -100px;
+	background-attachment: scroll;
+}
+/*****************End Banner*******************/
+}
+/***************************************** PORTRAIT *****************************************/
+@media screen and (min-width : 31em) and (max-width: 64em) and (orientation: portrait) {
+/*****************Banner*******************/
+.main-banner .content {
+	text-align: left;
+}
+.main-banner .content h1 {
+	color: F5F5F5;
+	bottom: 0;
+}
+/*****************End Banner*******************/
+	/*****************Begin Numbers******************/
+.numbers .content {
+	text-align: center;
+}
+/*****************End Numbers******************/
+	/*****************Majors*******************/
+section.majors {
+	background-position: 30%;
+}
+.majors .content .container {
+	margin-top: 2.5em
+}
+
+ .majors .content h1 {
+	padding: 2em 1.3em;
+}
+ .majors .content a.arrow {
+	font-size: 1.5em;
+	height: 2.2em;
+	width: 15.6em;
+	line-height: 2.2em;
+	padding: 0;
+	transition: ease-in 1s;
+	margin: 0 auto;
+}
+.majors .content a:hover {
+	background-position: 0 100%;
+	color: #444444;
+	transition: ease-in 1s;
+}
+/*****************End Majors*******************/
+	/*****************Begin Costs********************/
+.costs .content {
+	text-align: center;
+}
+.costs .content h1 {
+	margin: 2em 0;
+}
+.costs .content h1 img {
+	width: 20%;
+	top: 1em;
+	right: -0.5em;
+	left: auto;
+}
+
+.costs .content div .container p{
+font-size:.8em;
+
+}
+.costs .content .circle {
+	width: 8em;
+	height: 8em;
+}
+.costs .content .circle h4 {
+	font-size: 2em;
+}
+.costs .content .circle + p {
+	padding-top: 1em;
+	font-size: 0.75em;
+}
+/*****************End Costs********************/
+	/*****************Begin Visit********************/
+.visit .content h1 {
+	font-size: 2.5em;
+}
+/*****************End Visit********************/
+	/*****************Begin Explore******************/
+.explore .content .container {
+	margin: 2em 0;
+}
+
+/*****************End Explore******************/
+}
+/***************************************** LANDSCAPE *****************************************/
+@media screen and (min-width : 31em) and (max-width: 64em) and (orientation: landscape) {
+/*****************Begin Banner*******************/
+.main-banner .content {
+	text-align: left;
+}
+.main-banner .content h1 {
+	color: F5F5F5;
+	bottom: 0;
+}
+/*****************End Banner*******************/
+	/*****************Begin Numbers******************/
+.numbers .content {
+	text-align: center;
+}
+/*****************End Numbers******************/
+	/*****************Begin Majors*******************/
+section.majors {
+	background-position:30%;
+}
+.majors .content .container:first-of-type {
+	margin-top: 2.5em
+}
+.majors .content .container:last-of-type {
+	margin-top: 2.5em
+}
+.majors .content h1 {
+	padding: 1.75em 1.3em;
+	font-size: 3em;
+}
+.majors .content a.arrow {
+	font-size: 1.5em;
+	width: 10.6em;
+    height:1.5em;
+	line-height: 1.5em;
+	
+	transition: ease-in 1s;
+}
+.majors .content a:hover {
+	background-position: 0 100%;
+	color: #444444;
+	transition: ease-in 1s;
+}
+/*****************End Majors*******************/
+	/*****************Begin Costs********************/
+.costs .content {
+	text-align: center;
+}
+.costs .content h1 {
+	margin: 2em 0;
+	font-size: 2.5em;
+}
+.costs .content h1 img {
+	width: 20%;
+	top: 1em;
+	right: -0.5em;
+	left: auto;
+}
+.costs .content .circle {
+	width: 8em;
+	height: 8em;
+}
+.costs .content .circle h4 {
+	font-size: 2em;
+}
+.costs .content .circle + p {
+	padding-top: 1em;
+	font-size: 0.75em;
+}
+.costs .content div .container p{
+font-size:.8em;
+
+}
+/*****************End Costs********************/
+	/*****************Begin Visit********************/
+.visit .content h1 {
+	font-size: 2.5em;
+}
+.visit .content h1 span:nth-child(3) {
+	font-size: 2em;
+	padding-top: 0.5em;
+	padding-bottom: 1em;
+}
+/*****************End Visit********************/
+	/*****************Begin Explore******************/
+.explore .content .container {
+	margin: 2em 0;
+}
+.apply .content div.counsellorsCarousel img.round{
+		max-width: 50%;
+	}
+
+}
+
+/**************************************************************PHABLET****************************************************************************/
+
+@media screen and (max-width: 40em){
+     .scroll{
+        display:none;
+    }
+	.majors .content .container{
+        float:none;
+        clear: none;
+        max-width:100%;
+    }
+    section.majors {
+        background-position: bottom right;
+        max-height: 40em;
+    }
+     .majors h1 strong{
+        letter-spacing: 2px;
+    }
+     .majors h1{
+        margin: 0 auto .5em;
+        font-size: 2.6em!important;
+        max-width: none;
+        line-height: 1em;
+        padding-top: 1.5em;
+        min-height: 6.7em;
+    }
+     .majors a.arrow{
+        line-height: 1.2em;
+        width: 10em;
+        height: 1.4em;
+        font-size: 1.5em!important;
+        margin-top: -7em;
+    }
+}
+@media screen and (max-width: 38em){
+    .content a.arrow{
+        
+        font-size: 1.5em;
+    }
+    /*********************** COSTS ***********************/
+ /* section.students,  */
+ section.costs{
+             
+    }
+     .costs .content h1{
+        width: 100%;
+        float: none;
+        text-align: center;
+        margin-top: 2em;
+    }
+     .costs .inner .content h1 span{
+        font-size: 1.5em;
+        line-height: 1em;
+        background-size: 97% 6px;
+    }
+     .costs .inner .content h1 span:last-of-type{
+        font-size: 1em;
+    }
+     .costs .content h1 img{
+       
+    }
+     .costs .content div:not(.circle):not(.container){
+        width: 100%;
+        margin-top: 2em;
+        margin-bottom: 0;
+    }
+     .costs .content div .container, .costs .content div.btnContainer{
+        margin-top: 0.25em;
+        margin-bottom: 0;
+    }
+     .costs .content div .container .circle{
+        width: 7.5em;
+        height: 7.5em;
+    }
+     .costs .content div .container p{
+        line-height: 120%;
+        padding-top: 10%;
+        font-size: 0.837em;
+    }
+     .costs .content .circle h4{
+        font-size: 1.75em;
+    }
+    .costs  .content a.btn,.costs  .content a.btn-primary{
+        padding: 5% 0;
+        margin: 0.2em 12.5%;
+        width: 80%;
+    }
+/*********************** COSTS ***********************/
+}
+
+@media screen and (max-width: 30em){
+   
+    
+     .main-banner .inner .content h1{
+        left: 0.85em;
+        font-size: 1.8em;
+        /* width: 100%; */
+    }
+        section.main-banner {
+min-height: 180px;
+background-attachment: initial ;
+}
+section.main-banner .inner {
+    height: 19em;
+    position: relative;
+    background-position: 55% 0;
+}
+/*********************** NUMBERS ***********************/
+     .numbers .content h1{
+        font-size: 3em;
+        text-align: center;
+        line-height: 130%;
+    }
+     .numbers h1 .outline{
+        border: 0.08em solid #000000;
+    }
+     .numbers .content h3{
+        font-size:1.2em;
+     }
+     .numbers .content .wrapper{
+        width: 100%;
+    }
+     .numbers .owl-carousel .owl-wrapper .owl-item .stat h3{
+        font-size: 3.9em;
+    }
+     .numbers .owl-carousel .owl-wrapper .owl-item .stat p{
+        font-size: 0.99em;
+    }
+/*********************** NUMBERS ***********************/
+/*********************** MAJORS ***********************/
+   
+/*********************** MAJORS ***********************/
+
+/*********************** VISIT ***********************/
+     .visit{
+        height: 30em;
+        padding-bottom: 40px;
+    }
+     .visit .content div:not(.circle){
+        width: 100%;
+        float: none;
+    }
+     .content-wrapper section .inner .content{
+        width: 80%;
+    }
+     .visit .content span:nth-child(1){
+        background: url("/templates/_img/slices/png/UI-KIT_153.png") no-repeat 10.2% 60% / 22% 2px,
+                    url("/templates/_img/slices/png/content_costs_banner.png") no-repeat center center / 40% 100%,
+                    url("/templates/_img/slices/png/UI-KIT_153.png") no-repeat 89.8% 60% / 22% 2px;
+    }
+     .visit .content h1 span:nth-child(3){
+        background: url("/templates/_img/slices/png/UI-KIT_153.png") no-repeat 0% 94.5% / 39% 3px,
+                    url("/templates/_img/new%20slices/content_allittakes_star.png") no-repeat 43.7% 100% / 5% 15%,
+                    url("/templates/_img/new%20slices/content_allittakes_star.png") no-repeat 49.7% 100% / 5% 15%,
+                    url("/templates/_img/new%20slices/content_allittakes_star.png") no-repeat 55.7% 100% / 5% 15%,
+                    url("/templates/_img/slices/png/UI-KIT_153.png") no-repeat 100% 94.5% / 39% 3px;
+        font-size: 1.2em;
+    }
+     .visit .content div:not(.circle){
+        margin-top: 0;
+    }
+     .visit .circle{
+        width: 10.5em;
+        height: 10.5em;
+    }
+     .visit .circle h3{
+        font-size: 1.5em;
+    }
+/*********************** VISIT ***********************/
+/*********************** EXPLORE ***********************/
+     .explore .content h1{
+        margin-top: 1em;
+        font-size: 2.7em;
+    }
+     .explore .content a, .content a.arrow{
+        
+        font-size: 1.5em;
+    }
+/*********************** EXPLORE ***********************/
+/*********************** STUDENT ***********************/
+    .content-wrapper .students .content{
+        width: 80% !important;
+    }
+     .content-wrapper .students .inner{
+        background-size: auto 3.9em;
+    }
+     .content-wrapper .students h1{
+        margin: 2em auto 1.5em 0.75em;
+        font-size: 2.5em;
+    }
+     .content-wrapper .students h1 span.script{
+        left: 2em;
+    }
+     .content-wrapper .students p{
+        padding-bottom: 0;
+    }
+/*********************** STUDENT ***********************/
+/*********************** ACCEPTED ***********************/
+    .accepted .content h1{
+		text-align: center;
+	}
+	.accepted .content .container{
+		float: none;
+	}
+    section.accepted {
+        background-size:contain;
+    }
+/*********************** ACCEPTED ***********************/
+/*********************** STAFF ***********************/
+     
+/*********************** STAFF ***********************/
+/*********************** APPLY ***********************/
+     .apply .content a{
+        width: 80%;
+        margin: 1em auto;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 60em){
+	.counsellors-left, .counsellors-right{
+		top: 3em;
+	}
+	.students-left, .students-right{
+		top: 0em;
+	}
+	.students-left{
+		left: -1em;
+	}
+	.students-right{
+		right: -1em;
+	}
+}
+@media screen and (max-width: 35em){
+	.counsellors-left{
+		right: -2em;
+	}
+	.counsellors-right{
+		left: -2em;
+	}
+}

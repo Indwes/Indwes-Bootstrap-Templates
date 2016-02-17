@@ -1,0 +1,272 @@
+/* ===VARIABLES=== */
+/* ===DEFAULT=== */
+* {
+  font-family: "Proxima Nova", Helvetica, Arial, sans-serif;
+  direction: ltr;
+}
+.indwes-header {
+  /* Expanding Search Styles Below */
+  /* Expanding Search Styles Above */
+}
+.indwes-header .navbar {
+  min-height: 3em;
+  max-height: 4em;
+  border: 0;
+  border-radius: 0;
+  margin: 0;
+}
+.indwes-header .container {
+  position: relative;
+}
+.indwes-header .navbar-toggle {
+  background-color: #ab192a;
+  color: #ffffff;
+}
+.indwes-header .navbar-toggle:hover,
+.indwes-header .navbar-toggle:focus {
+  background-color: #ffffff;
+  color: #ab192a;
+}
+.indwes-header .navbar-brand {
+  height: auto;
+  background-color: #ab192a;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.indwes-header .navbar-brand:hover {
+  background-color: #ab192a;
+}
+.indwes-header .navbar-brand img {
+  width: 150px;
+}
+.indwes-header ul.navbar-nav a {
+  padding: 18px 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.indwes-header ul.navbar-nav a:hover {
+  color: #ab192a;
+  background-color: #ffffff;
+}
+.indwes-header .form-wrapper {
+  float: none !important;
+}
+.indwes-header .form-group .form-control,
+.indwes-header .form-group .btn-submit {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+.indwes-header .form-group .btn-submit {
+  pointer-events: none;
+  background: none;
+  line-height: 1em;
+  vertical-align: middle;
+  color: #ffffff;
+}
+.indwes-header .navbar-form {
+  position: relative;
+  min-width: 50px;
+  width: 0;
+  margin: 0;
+  min-height: 4em;
+  max-height: 4em;
+  float: right;
+  overflow: hidden;
+  -webkit-transition: width 0.3s;
+  -moz-transition: width 0.3s;
+  -ms-transition: width 0.3s;
+  -o-transition: width 0.3s;
+  transition: width 0.3s;
+}
+.indwes-header .form-control {
+  top: 0;
+  right: 0;
+  border: 0;
+  outline: 0;
+  background: #ffffff;
+  margin: 11px 0;
+  padding: 0 20px 0 20px;
+  color: #333333;
+}
+.indwes-header .form-control::-webkit-input-placeholder {
+  color: #333333;
+}
+.indwes-header .form-control:-moz-placeholder {
+  color: #333333;
+}
+.indwes-header .form-control::-moz-placeholder {
+  color: #333333;
+}
+.indwes-header .form-control:-ms-input-placeholder {
+  color: #333333;
+}
+.indwes-header .glyphicon-search,
+.indwes-header .btn-submit {
+  width: 2.35em;
+  height: 2.35em;
+  display: block;
+  position: absolute;
+  font-size: 1.7em;
+  top: 0;
+  right: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  line-height: 2.35em;
+  text-align: center;
+  cursor: pointer;
+  color: #ffffff;
+  background: #ab192a;
+}
+.indwes-header .navbar-form-open {
+  width: 25%;
+}
+.indwes-header .header-myiwu {
+  position: absolute;
+  top: 4em;
+  right: 0;
+}
+.indwes-header .header-myiwu .header-myiwu-button {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  padding: 0.5em 1.25em 0.5em 0.75em;
+  border: none;
+  font-weight: bold;
+  font-size: 0.8em;
+}
+.indwes-header .header-myiwu .header-myiwu-arrow {
+  width: 0;
+  height: 0;
+  border-top: 0.35em solid transparent;
+  border-bottom: 0.35em solid transparent;
+  border-left: 0.35em solid #F5F5F5;
+  position: absolute;
+  top: 0.675em;
+  right: 0.4em;
+}
+/* ===AFFIX=== */
+.indwes-header .affix.navbar {
+  width: 100%;
+  max-height: 3em;
+  min-height: 3em;
+}
+.indwes-header .affix.navbar .navbar-toggle {
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+.indwes-header .affix.navbar .navbar-brand {
+  max-height: 3em;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  border-radius: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.indwes-header .affix.navbar .navbar-brand img {
+  width: 108px;
+}
+.indwes-header .affix.navbar ul.navbar-nav a {
+  padding: 11px 15px;
+}
+.indwes-header .affix.navbar .form-control {
+  margin: 4px 0;
+}
+.indwes-header .affix.navbar .glyphicon-search,
+.indwes-header .affix.navbar .btn-submit {
+  width: 1.76em;
+  height: 1.76em;
+  line-height: 1.76em;
+}
+.indwes-header .affix.navbar .header-myiwu {
+  top: 3em;
+}
+/* ===MEDIA_QUERIES=== */
+/* Medium Devices, Desktops | Bootstrap */
+@media (max-width: 1199px) {
+  .indwes-header .form-control {
+    max-width: 11em;
+  }
+  .indwes-header .affix.navbar .navbar-form {
+    padding: 0 15px;
+    min-height: 3em;
+    max-height: 3em;
+  }
+}
+/* Small Devices, Tablets | Bootstrap */
+@media (max-width: 991px) {
+  .indwes-header .form-wrapper {
+    position: absolute;
+    top: 0;
+    right: 1.05em;
+    width: 100%;
+  }
+  .indwes-header .form-wrapper .form {
+    position: relative;
+  }
+  .indwes-header .form-wrapper .navbar-form {
+    padding: 0;
+    border: none;
+    box-shadow: none;
+  }
+  .indwes-header .form-wrapper .navbar-form.navbar-form-open {
+    position: absolute;
+    z-index: 1000;
+    right: 0;
+    width: 270px;
+  }
+  .indwes-header .form-wrapper .form-control {
+    max-width: 15em;
+  }
+  .indwes-header .navbar-collapse.navbar-right {
+    float: none !important;
+  }
+}
+/* Extra Small Devices, Phones | Bootstrap */
+@media (max-width: 767px) {
+  .indwes-header .navbar-brand {
+    max-height: 3em;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border-radius: 0;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+  }
+  .indwes-header .navbar-brand img {
+    width: 108px;
+  }
+  .indwes-header .form-wrapper {
+    right: 5em;
+  }
+  .indwes-header .navbar-collapse {
+    background-color: #ab192a;
+    border: none;
+    box-shadow: none;
+    text-align: center;
+  }
+  .indwes-header .navbar-collapse ul.nav a {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    background-color: #980826;
+    margin-top: 1px;
+    margin-bottom: 1px;
+  }
+  .indwes-header .navbar-collapse ul.nav a:hover {
+    background-color: #ffffff;
+  }
+}
+/* Extra Extra Small Devices, Phones | Custom */
+@media (max-width: 480px) {
+  .indwes-header .form-wrapper .navbar-form.navbar-form-open {
+    width: 200px;
+  }
+  .indwes-header .form-wrapper .form-control {
+    max-width: 10em;
+  }
+}

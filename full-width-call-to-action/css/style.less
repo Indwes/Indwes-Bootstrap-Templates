@@ -1,0 +1,38 @@
+/* ===VARIABLES=== */
+@import "variables";
+
+/* ===MIXINS=== */
+// This mixin controls the color and background color of
+// the full-width buttons (btn-full)
+.btn-full-color(@background-color, @color){
+    a{
+        background-color: @background-color;
+        color: @color;
+
+        &:hover{
+            background-color: darken(@background-color, 15%);
+        }
+    }
+}
+
+/* ===DEFAULT=== */
+*{
+    font-family: @font-family-sans-serif;
+    direction: ltr;
+}
+.btn-full{
+    position: relative;
+
+    a{
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+        font-weight: 600;
+    }
+}
+.btn-full.primary{
+    .btn-full-color(@brand-primary, @brand-white);
+}
+.btn-full.dark{
+    .btn-full-color(@gray, @brand-white);
+}

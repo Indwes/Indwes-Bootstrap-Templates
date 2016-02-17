@@ -1,0 +1,30 @@
+/* ===VARIABLES=== */
+/* ===MIXINS=== */
+/* ===DEFAULT=== */
+* {
+  font-family: "Proxima Nova", Helvetica, Arial, sans-serif;
+  direction: ltr;
+}
+.btn-full {
+  position: relative;
+}
+.btn-full a {
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  font-weight: 600;
+}
+.btn-full.primary a {
+  background-color: #ab192a;
+  color: #ffffff;
+}
+.btn-full.primary a:hover {
+  background-color: #680f1a;
+}
+.btn-full.dark a {
+  background-color: #555555;
+  color: #ffffff;
+}
+.btn-full.dark a:hover {
+  background-color: #2f2f2f;
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Header Module Template</title>
+
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <header class="indwes-header">
+            <nav class="navbar navbar-default" data-spy="affix" data-offset-top="5" role="main">
+                <!-- Breaks at sm & xs -->
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-header">
+                            <span class="glyphicon glyphicon-menu-hamburger"></span>
+                        </button>
+                        <a href="/" class="navbar-brand">
+                            <img class="" src="img/logo_v2.png"/>
+                        </a>
+                    </div>
+                    <div class="form-wrapper navbar-right">
+                        <div class="form">
+                            <form class="navbar-form" role="search">
+                                <div class="form-group">
+                                    <input type="search" placeholder="Search..." name="search" class="form-control"  />
+                                    <input type="submit" class="btn-submit">
+                                    <span class="glyphicon glyphicon-search"></span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="collapse navbar-collapse navbar-right" id="navbar-collapse-header">
+                        <ul class="nav navbar-nav">
+                            <li>
+                                <a href="/about">ABOUT</a>
+                            </li>
+                            <li>
+                                <a href="/academics">ACADEMICS</a>
+                            </li>
+                            <li>
+                                <a href="/admissions">ADMISSIONS</a>
+                            </li>
+                            <li>
+                                <a href="http://www.iwuwildcats.com/">ATHLETICS</a>
+                            </li>
+                            <li>
+                                <a href="/apply">APPLY</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header-myiwu navbar-right">
+                        <a href="http://myiwu.indwes.edu/" target="_blank" class="btn btn-primary header-myiwu-button">myIWU</a>
+                        <div class="header-myiwu-arrow"></div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div style="height: 1080px; background-color: burlywood;">&nbsp;</div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script>
+
+            $(document).ready(function(){
+                var submitIcon = $('.glyphicon-search');
+                var inputBox = $('.form-control');
+                var searchBox = $('.navbar-form');
+                var isOpen = false;
+                submitIcon.click(function(){
+                    if(isOpen == false){
+                        searchBox.addClass('navbar-form-open');
+                        inputBox.focus();
+                        isOpen = true;
+                    } else {
+                        searchBox.removeClass('navbar-form-open');
+                        inputBox.focusout();
+                        isOpen = false;
+                    }
+                });
+                submitIcon.mouseup(function(){
+                    return false;
+                });
+                searchBox.mouseup(function(){
+                    return false;
+                });
+                $(document).mouseup(function(){
+                    if(isOpen == true){
+                        $('.glyphicon-search').css('display','block');
+                        submitIcon.click();
+                    }
+                });
+            });
+            function buttonUp(){
+                var inputVal = $('.form-control').val();
+                inputVal = $.trim(inputVal).length;
+                if( inputVal !== 0){
+                    $('.glyphicon-search').css('display','none');
+                } else {
+                    $('.form-control').val('');
+                    $('.glyphicon-search').css('display','block');
+                }
+            }
+
+        </script>
+    </body>
+</html>

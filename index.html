@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Indiana Wesleyan University - Christian College Changing the World for Christ through Faith, Learning, Character, Scholarship and Leadership</title>
+     <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+	<!-- Start Header Region -->
+	 <header class="indwes-header">
+            <nav class="navbar navbar-default" data-spy="affix" data-offset-top="5" role="main">
+                <!-- Breaks at sm & xs -->
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-header">
+                            <span class="glyphicon glyphicon-menu-hamburger"></span>
+                        </button>
+                        <a href="/" class="navbar-brand">
+                            <img class="" src="img/logo_v2.png"/>
+                        </a>
+                    </div>
+                    <div class="form-wrapper navbar-right">
+                        <div class="form">
+                            <form class="navbar-form" role="search">
+                                <div class="form-group">
+                                    <input type="search" placeholder="Search..." name="search" class="form-control"  />
+                                    <input type="submit" class="btn-submit">
+                                    <span class="glyphicon glyphicon-search"></span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="collapse navbar-collapse navbar-right" id="navbar-collapse-header">
+                        <ul class="nav navbar-nav">
+                            <li>
+                                <a href="/about">ABOUT</a>
+                            </li>
+                            <li>
+                                <a href="/academics">ACADEMICS</a>
+                            </li>
+                            <li>
+                                <a href="/admissions">ADMISSIONS</a>
+                            </li>
+                            <li>
+                                <a href="http://www.iwuwildcats.com/">ATHLETICS</a>
+                            </li>
+                            <li>
+                                <a href="/apply">APPLY</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header-myiwu navbar-right">
+                        <a href="http://myiwu.indwes.edu/" target="_blank" class="btn btn-primary header-myiwu-button">myIWU</a>
+                        <div class="header-myiwu-arrow"></div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- End Header Region -->
+<!-- Begin Content Region -->
+
+
+<!-- End Content Region -->
+<!-- Begin Footer Region -->
+<footer class="indwes-footer light">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-4 col-md-3 text-left hidden-xs">
+                <nav class="footer-nav">
+                    <ul class="list-unstyled">
+                        <li><a href="http://alumni.indwes.edu/">Alumni</a></li>
+                        <li><a href="/HR">Employment</a></li>
+                        <li><a href="http://www.iwubookstore.com/">IWU Bookstore</a></li>
+                        <li><a href="http://indwes.libguides.com/homepage/">Jackson Library</a></li>
+                        <li><a href="/Legal">Legal Notice</a></li>
+                        <li><a href="/Visual-Identity">Visual Identity</a></li>
+                        <li><a href="/Seminary">Wesley Seminary</a></li>
+                        <li><a href="http://wiwutv51.com/">WIWU TV</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-6 text-center">
+                <a href="/">
+                    <img class="footer-brand" src="img/footer-logo.png" />
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-3 text-right">
+                <address class="hidden-xs">
+                <strong>Indiana Wesleyan University</strong>
+                    <br />4201 S. Washington St.
+                    <br/>Marion, IN 46953
+                    <br/>p: <a href="tel:8664686498">866-468-6498</a>
+                </address>
+                <div class="hidden-xs footer-veterans">
+                    <a href="/About/Veterans">
+                        <img src="img/military.png" />
+                    </a>
+                </div>
+                <div class="footer-social center-block">
+                    <ul class="list-inline center-block">
+                        <li class="footer-facebook">
+                            <a href="https://www.facebook.com/IndWes">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="footer-twitter">
+                            <a href="https://twitter.com/IndWes">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="footer-linkedin">
+                            <a href="http://www.linkedin.com/company/16943?trk=tyah">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                        </li>
+                        <li class="footer-youtube">
+                            <a href="http://www.youtube.com/user/IWUVideo">
+                                <i class="fa fa-youtube"></i>
+                            </a>
+                        </li>
+                        <li class="footer-calendar">
+                            <a href="/calendar">
+                                <i class="fa fa-calendar"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-10 col-sm-12 text-center center-block">
+                <p class="hidden-xs footer-copyright">&copy; 2014 Indiana Wesleyan University</p>
+                <address class="hidden-sm hidden-md hidden-lg footer-mobile-address">
+                    4201 S. Washington St.
+                    <br/>Marion, IN 46953
+                    <br/>p: <a href="tel:8664686498">866-468-6498</a>
+                </address>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- End Footer Region -->
+<!-- Start Footer Scripts Region -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script>
+
+            $(document).ready(function(){
+                var submitIcon = $('.glyphicon-search');
+                var inputBox = $('.form-control');
+                var searchBox = $('.navbar-form');
+                var isOpen = false;
+                submitIcon.click(function(){
+                    if(isOpen == false){
+                        searchBox.addClass('navbar-form-open');
+                        inputBox.focus();
+                        isOpen = true;
+                    } else {
+                        searchBox.removeClass('navbar-form-open');
+                        inputBox.focusout();
+                        isOpen = false;
+                    }
+                });
+                submitIcon.mouseup(function(){
+                    return false;
+                });
+                searchBox.mouseup(function(){
+                    return false;
+                });
+                $(document).mouseup(function(){
+                    if(isOpen == true){
+                        $('.glyphicon-search').css('display','block');
+                        submitIcon.click();
+                    }
+                });
+            });
+            function buttonUp(){
+                var inputVal = $('.form-control').val();
+                inputVal = $.trim(inputVal).length;
+                if( inputVal !== 0){
+                    $('.glyphicon-search').css('display','none');
+                } else {
+                    $('.form-control').val('');
+                    $('.glyphicon-search').css('display','block');
+                }
+            }
+
+        </script>
+
+<!-- End Footer Scripts Region -->
+</body>
+</html>

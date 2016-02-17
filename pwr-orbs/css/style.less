@@ -1,0 +1,92 @@
+/* ===VARIABLES=== */
+@import "variables";
+
+
+/* ===DEFAULT=== */
+*{
+    font-family: @font-family-sans-serif !important;
+    direction: ltr;
+}
+
+/* Base */
+.pwr-orb{
+    background-color: fade(@brand-white, 80%);
+    border-radius: 50%;
+    min-width: 310px;
+    max-width: 310px;
+    min-height: 310px;
+    max-height: 310px;
+    position: relative;
+    margin: 10px;
+
+    h1{
+        margin: 0 auto;
+        padding-top: 1.25em;
+        padding-bottom: 0.5em;
+        width: 85%;
+    }
+    .pwr-orb-desc{
+        width: 85%;
+        margin: 0 auto;
+
+        p a{
+            margin-top: 2em;
+        }
+
+        ul{
+            visibility: hidden;
+            position: absolute;
+            width: 100%;
+            bottom: 1em;
+            left: 0;
+        }
+        a{
+            margin-bottom: 1em;
+            width: 50%;
+        }
+    }
+
+    &:hover{
+        div.pwr-orb-desc {
+            p {
+                visibility: hidden;
+            }
+            ul {
+                visibility: visible;
+            }
+        }
+    }
+}
+
+/* Multiple Orbs */
+.orbs-1, .orbs-2, .orbs-3, .orbs-4{
+    .pwr-orb{
+        display: inline-block;
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+}
+
+/* Light */
+.pwr-orb.pwr-orb-light{
+    div.pwr-orb-desc p a, div.pwr-orb-desc ul a{
+        color: #fff;
+        background-color: fade(@brand-primary, 90%);
+        border-color: darken(@brand-primary, 5%);
+    }
+}
+/* Primary */
+.pwr-orb.pwr-orb-primary{
+    background-color: fade(@brand-primary, 90%);
+    color: @brand-white;
+}
+/* Dark */
+.pwr-orb.pwr-orb-dark{
+    background-color: fade(@gray-darker, 90%);
+    color: @brand-white;
+}
+
+
+
+
+

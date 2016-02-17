@@ -1,0 +1,21 @@
+/* ===VARIABLES=== */
+/* ===DEFAULT=== */
+* {
+    font-family: "Proxima Nova", Helvetica, Arial, sans-serif !important;
+    direction: ltr;
+}
+
+h3 {
+    color: #ab192a;
+}
+
+.btn {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+@media (min-width: 500px) and (max-width: 767px) {
+    img {
+        width: 50%;
+    }
+}
